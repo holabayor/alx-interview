@@ -28,7 +28,8 @@ try:
         data = line.split()
         if len(data) < 9:
             continue
-        status_stats[data[7]] += 1
+        code = data[7]
+        status_stats[code] += 1
         total_size += int(data[8])
 
         counter += 1
