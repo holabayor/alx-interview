@@ -26,6 +26,8 @@ status_stats = {'200': 0, '301': 0, '400': 0, '401': 0,
 try:
     for line in sys.stdin:
         data = line.split()
+        if len(data) < 9:
+            continue
         status_stats[data[7]] += 1
         total_size += int(data[8])
 
