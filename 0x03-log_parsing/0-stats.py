@@ -29,8 +29,9 @@ try:
         if len(data) < 9:
             continue
         code = data[7]
-        status_stats[code] += 1
-        total_size += int(data[8])
+        if code in status_stats.keys():
+            status_stats[code] += 1
+            total_size += int(data[8])
 
         counter += 1
         if counter == 10:
