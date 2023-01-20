@@ -32,8 +32,8 @@ try:
         if code in status_stats.keys():
             status_stats[code] += 1
             total_size += int(data[8])
+            counter += 1
 
-        counter += 1
         if counter == 10:
             _print(total_size, status_stats)
             counter = 0
