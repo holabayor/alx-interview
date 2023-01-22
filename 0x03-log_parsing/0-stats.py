@@ -8,7 +8,7 @@ import sys
 
 def _print(file_size: int, status_dict: dict) -> None:
     '''
-        helper function to print the  results
+        helper function to print to stdout
     '''
     print("File size: {}".format(file_size))
     for key, value in sorted(status_dict.items()):
