@@ -6,7 +6,7 @@
 import sys
 
 
-def _print(file_size, status_dict):
+def _print(file_size: int, status_dict: dict) -> None:
     '''
         helper function to print the  results
     '''
