@@ -6,6 +6,11 @@ from typing import List
 
 
 def validUTF8(data:  List[int]) -> bool:
+    '''
+        Method that determines if a given data set represents
+        a valid UTF-8 encoding
+    '''
+
     # Check if the data set is empty
     if not data:
         return False
