@@ -3,13 +3,13 @@
 N Queens
 """
 import sys
-from typing import List  # For annotations
+# from typing import List  # For annotations
 
 boardcnt = 0
 solution = []
 
 
-def IsBoardOk(chessboard: List, row: int, col: int):
+def IsBoardOk(chessboard, row: int, col: int):
     # Check if there is a queen 'Q' positioned to
     # the left of column on the same row.
     for c in range(col):
@@ -29,7 +29,7 @@ def IsBoardOk(chessboard: List, row: int, col: int):
     return True
 
 
-def PlaceNQueens(chessboard: List, col: int):
+def PlaceNQueens(chessboard, col: int):
     # If all the columns have a queen 'Q', a solution has been found.
     global boardcnt
     if (col >= len(chessboard)):
