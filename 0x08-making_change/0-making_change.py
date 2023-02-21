@@ -17,7 +17,7 @@ def makeChange(coins: List[int], total: int):
         Fewest number of coins needed to meet total else -1
     """
     totalList = [total + 1] * (total + 1)
-    # totalList[0] = 0
+    totalList[0] = 0
     for i in range(1, total + 1):
         # print(f'This is loop no {i}')
         for coin in coins:
