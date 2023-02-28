@@ -2,7 +2,6 @@
 '''
 Given an island, return the perimeter of the island
 '''
-from typing import List
 
 
 def island_perimeter(grid: List[List[int]]) -> int:
