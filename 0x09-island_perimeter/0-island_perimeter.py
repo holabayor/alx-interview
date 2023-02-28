@@ -4,7 +4,7 @@ Given an island, return the perimeter of the island
 '''
 
 
-def island_perimeter(grid: List[List[int]]) -> int:
+def island_perimeter(grid):
     ''' Calculate the perimeter of a given grid
         Returns the perimeter of the island
     '''
