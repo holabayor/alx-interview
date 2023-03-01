@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-'''
-Given an n x n 2D matrix, rotate it 90 degrees clockwise
+''' Make change module
 '''
 
 
@@ -9,7 +8,7 @@ from typing import List
 
 def makeChange(coins: List[int], total: int) -> int:
     """ Determine the fewest number of coins needed to
-        meet a given i total
+        meet a given total
     Args:
         coins (list): List of integers
         total (int): Total number of coins
