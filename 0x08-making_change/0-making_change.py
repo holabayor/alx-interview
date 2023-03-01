@@ -3,10 +3,7 @@
 '''
 
 
-from typing import List
-
-
-def makeChange(coins: List[int], total: int) -> int:
+def makeChange(coins, total):
     """ Determine the fewest number of coins needed to
         meet a given total
     Args:
