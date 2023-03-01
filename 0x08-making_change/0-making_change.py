@@ -12,7 +12,7 @@ def makeChange(coins, total):
     Return:
         Fewest number of coins needed to meet total else -1
     """
-    if total < 0:
+    if total <= 0:
         return 0
     totalList = [total + 1] * (total + 1)
     totalList[0] = 0
