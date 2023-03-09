@@ -10,7 +10,7 @@ def isWinner(x, nums):
 
     maria_wins, ben_wins = 0, 0
     # Since Maria always plays first, she only wins when
-    # the number of prime numbers available is prime
+    # the total number of prime numbers available is prime
     for num in nums:
         if len(primeNumbers(num)) % 2 == 0:
             ben_wins += 1
