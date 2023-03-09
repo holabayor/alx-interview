@@ -8,21 +8,18 @@ def isWinner(x, nums):
     if x < 1 or not nums:
         return None
 
-    maria, ben = 0, 0
+    maria_wins, ben_wins = 0, 0
     # Since Maria always plays first, she only wins when
     # the number of prime numbers available is prime
     for num in nums:
-        print(primeNumbers(num))
         if len(primeNumbers(num)) % 2 == 0:
-            ben += 1
-            print('Ben win')
+            ben_wins += 1
             continue
-        maria += 1
-        print('Maria win')
+        maria_wins += 1
 
-    if maria == ben:
+    if maria_wins == ben_wins:
         return None
-    return 'Maria' if maria > ben else 'Ben'
+    return 'Maria' if maria_wins > ben_wins else 'Ben'
 
 
 def primeNumbers(n):
